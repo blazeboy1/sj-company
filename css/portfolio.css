@@ -1,0 +1,118 @@
+/* =====================
+   GLOBAL
+===================== */
+.portfolio-page {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+/* =====================
+   HERO
+===================== */
+.portfolio-hero {
+  padding: 100px 20px;
+}
+
+.portfolio-hero h1 {
+  font-size: 2.5rem;
+}
+
+.portfolio-hero p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* =====================
+   FILTER
+===================== */
+.portfolio-filter {
+  margin: 30px 0;
+}
+
+.portfolio-filter button {
+  background: #111;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.portfolio-filter .active {
+  background: var(--primary);
+  color: #000;
+}
+
+/* =====================
+   GRID
+===================== */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 7%;
+}
+
+/* ITEM */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+/* HOVER EFFECT */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+/* =====================
+   CTA
+===================== */
+.portfolio-cta {
+  padding: 100px 20px;
+}
+
+.portfolio-cta h2 {
+  color: var(--primary);
+}
+
+.portfolio-cta a {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--primary);
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

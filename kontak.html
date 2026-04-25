@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Service TV, kulkas, mesin cuci panggilan Jakarta Timur. Teknisi berpengalaman, cepat, dan bergaransi. Hubungi sekarang!">
+    <title>Kontak Kami</title>
+
+    <!-- font style -->
+    <link rel="icon" href="/public/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">SJ <span>Electronics</span></a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profil</a>
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle">Layanan<span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="service-tv-led-lcd.html">Service TV LED/LCD</a>
+            <a href="service-tv-tabung.html">Service TV Tabung</a>
+            <a href="service-mesincuci.html">Service Mesin Cuci</a>
+            <a href="service-soundsystem.html">Service Sound System</a>
+            <a href="service-kulkas.html">Service Kulkas</a>
+            <a href="service-AC.html">Service AC</a>
+            <a href="service-kipasangin.html">Service Kipas Angin</a>
+            <a href="service-dispenser.html">Service Dispenser</a>
+          </div>
+        </div>
+        <a href="kontak.html">Kontak</a>
+        <!-- <div class="dropdown">
+          <a href="#" class="dropdown-toggle">Article<span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="">TV Tidak Nyala</a>
+            <a href="">TV Tidak Nyala</a>
+            <a href="">TV Tidak Nyala</a>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- CONTACT -->
+    <section class="contact-page">
+
+      <h2>Hubungi Kami</h2>
+      <p class="subtitle">Silakan hubungi kami atau kirim pesan melalui form WhatsApp</p>
+
+      <div class="contact-wrapper">
+
+        <!-- KIRI -->
+        <div class="contact-left">
+
+          <div class="contact-box">
+            <i data-feather="map-pin"></i>
+            <p> Jl. Tipar cakung, Jembatan tinggi, Gg. Molen, RT.09/RW.08,
+              Cakung Barat,<br>Cakung, Jakarta Timur.</p>
+          </div>
+          <div class="contact-box">
+            <i data-feather="facebook"></i>
+            <p> Ahmad Fahmi</p>
+          </div>
+          <div class="contact-box">
+            <i data-feather="instagram"></i>
+            <p> @fahmi_servis_tv</p>
+          </div>
+          <div class="contact-box">
+            <i data-feather="type"></i>
+            <p> @sj_electronics8</p>
+          </div>
+          <div class="contact-box">
+            <i data-feather="mail"></i>
+            <p> contact@sjelectronics.my.id</p>
+          </div>
+          <div class="contact-box">
+            <i data-feather="phone"></i>
+            <p> 08561458701</p>
+          </div>
+        </div>
+
+        <!-- KANAN -->
+        <div class="contact-right">
+          <form onsubmit="return kirimWA(event)">
+
+            <input type="text" id="nama" placeholder="Nama" required>
+
+            <input type="text" id="hp" placeholder="No HP (opsional)">
+
+            <!-- PILIH LAYANAN -->
+            <select id="layanan" required>
+              <option value="">Pilih Layanan</option>
+              <option>Service TV LED/LCD</option>
+              <option>Service TV Tabung</option>
+              <option>Service Mesin Cuci</option>
+              <option>Service Sound System</option>
+              <option>Service Kulkas</option>
+              <option>Service AC</option>
+              <option>Service Kipas Angin</option>
+              <option>Service Dispenser</option>
+            </select>
+
+            <!-- KENDALA USER -->
+            <textarea id="kendala" placeholder="Contoh: TV mati total, lampu indikator menyala tapi layar gelap..." required></textarea>
+
+            <!-- DETAIL TAMBAHAN -->
+            <textarea id="pesan" placeholder="Pesan tambahan (opsional)"></textarea>
+
+            <button type="submit">Kirim via WhatsApp</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.761450694553!2d106.93193027498987!3d-6.162694093824533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698b31b16696c5%3A0x63322bff779f79cd!2sSJ%20ELECTRONICS!5e0!3m2!1sid!2sid!4v1775996342020!5m2!1sid!2sid"></iframe>
+    </section>
+
+<!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://instagram.com/fahmi_servis_tv?igshid=OGQ5ZDc2ODk2ZA=="
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/profile.php?id=100090487745268"
+          ><i data-feather="facebook"></i
+        ></a>
+        <a href="https://www.tiktok.com/@sj_electronics8"
+          ><i data-feather="type"></i
+        ></a>
+        <a href="https://wa.me/08561458701"><i data-feather="send"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Profile</a>
+        <a href="#">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">SJ Electronics</a>. | &copy; 2026.</p>
+        <p>Cepat • Terpercaya • Profesional</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+<script>
+  feather.replace();
+</script>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="js/script.js"></script>
+  </body>
+</html>
