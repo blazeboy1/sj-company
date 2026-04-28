@@ -260,6 +260,8 @@ ${pesan || "-"}`;
 
   window.open(`https://wa.me/${noWA}?text=${encodeURIComponent(text)}`);
   return false;
+
+  document.querySelector("form").reset();
 }
 </script>
 
