@@ -171,17 +171,16 @@
     <!-- FORM -->
     <div class="contact-right">
 
-      <form id="waForm">
+      <form onsubmit="return kirimWA(event)">
 
         <input type="text" id="nama" placeholder="Nama" required>
-
         <input type="text" id="hp" placeholder="No HP">
 
-        <!-- AUTO SERVICE -->
-        <input type="text" id="layanan" value="Service TV LED/LCD" readonly>
+        <!-- AUTO -->
+        <input type="text" id="layanan" readonly>
 
         <textarea id="kendala"
-          placeholder="Contoh: TV mati total, lampu indikator menyala tapi layar gelap..."
+          placeholder="Contoh: TV mati total, layar blank, suara ada gambar tidak ada."
           required></textarea>
 
         <textarea id="pesan"
