@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if (layananInput) layananInput.value = layanan;
 });
 
-// WA SCRIPT
+// WA FUNCTION
 function kirimWA(e) {
   e.preventDefault();
 
@@ -248,7 +248,7 @@ function kirimWA(e) {
   const text =
 `Halo SJ Electronics,
 
-Saya ingin service TV:
+Saya ingin service:
 
 Nama: ${nama}
 No HP: ${hp}
@@ -258,16 +258,13 @@ Layanan: ${layanan}
 Kendala:
 ${kendala}
 
-Detail tambahan:
-${pesan || "-"}
+Detail:
+${pesan || "-"}`;
 
-Apakah bisa dibantu hari ini?`;
-
-  const url = `https://wa.me/${noWA}?text=${encodeURIComponent(text)}`;
-
-  window.open(url, "_blank");
-
+  window.open(`https://wa.me/${noWA}?text=${encodeURIComponent(text)}`);
   return false;
+
+  document.querySelector("form").reset();
 }
 </script>
 
