@@ -49,6 +49,11 @@ body.no-scroll {
   font-style: italic;
 }
 
+.navbar img {
+  max-width: 1.2rem;
+  max-hight: 1rem;
+}
+
 .navbar .navbar-logo span {
   color: var(--primary);
 }
