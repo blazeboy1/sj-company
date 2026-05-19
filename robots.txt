@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap:
-https://sjelectronics.my.id/sitemap.xml
+Https://sjelectronics.my.id/sitemap.xml
