@@ -266,6 +266,8 @@ function kirimWA(e) {
   const text = `Halo SJ Electronics,\n\nSaya ingin service:\n\nNama: ${nama}\nNo HP: ${hp}\n\nLayanan: ${layanan}\n\nKendala:\n${kendala}\n\nDetail:\n${pesan || "-"}`;
   window.open(`https://wa.me/${noWA}?text=${encodeURIComponent(text)}`);
   return false;
+
+  document.querySelector("form").reset();
 }
 </script>
 <script src="js/script.js"></script>
